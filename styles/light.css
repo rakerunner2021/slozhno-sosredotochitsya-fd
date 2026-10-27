@@ -5,8 +5,79 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --color-title: #ffc2e6;
+  --color-accent: #ff8dcb;
+  --color-text: #353430;
+  --color-background: #ffeef6;
+  --background-image-url: none;
+}
+
+.theme-light .title-decor,
+.theme-light .section__title,
+.theme-light .section:last-of-type .section__title,
+.theme-light .header__theme-menu-button {
+  color: var(--color-text);
+}
+
+.theme-light .header__record {
+  display: none;
+}
+
+.theme-light .decorated-zone::before {
+  border-top: 1px solid var(--color-text);
+  border-right: 1px solid var(--color-text);
+}
+
+.theme-light .decorated-zone::after {
+  border-bottom: 1px solid var(--color-text);
+  border-left: 1px solid var(--color-text);
+}
+
+.theme-light .header__theme-menu-button_active,
+.theme-light .header__theme-menu-button:focus-visible {
+  border-color: var(--color-text);
+}
+
+.theme-light .header__theme-menu-button:hover {
+  border-color: rgb(from var(--color-text) r g b / 40%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-title: #ffc2e6;
+    --color-accent: #ff8dcb;
+    --color-text: #353430;
+    --color-background: #ffeef6;
+    --background-image-url: none;
+  }
+
+  .theme-auto .title-decor,
+  .theme-auto .section__title,
+  .theme-auto .section:last-of-type .section__title,
+  .theme-auto .header__theme-menu-button {
+    color: var(--color-text);
+  }
+
+  .theme-auto .header__record {
+    display: none;
+  }
+
+  .theme-auto .decorated-zone::before {
+    border-top: 1px solid var(--color-text);
+    border-right: 1px solid var(--color-text);
+  }
+
+  .theme-auto .decorated-zone::after {
+    border-bottom: 1px solid var(--color-text);
+    border-left: 1px solid var(--color-text);
+  }
+
+  .theme-auto .header__theme-menu-button_active,
+  .theme-auto .header__theme-menu-button:focus-visible {
+    border-color: var(--color-text);
+  }
+
+  .theme-auto .header__theme-menu-button:hover {
+    border-color: rgb(from var(--color-text) r g b / 40%);
+  }
 }

@@ -3,10 +3,10 @@
   и их переопределение под различные устройства
 */
 :root {
-  --color-accent: #db00ff;
-  --color-secondary: #ff0070;
+  --color-title: #db00ff;
+  --color-accent: #ff0070;
   --color-background: #000028;
-  --text-color: #f1b2ce;
+  --color-text: #f1b2ce;
   --font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
   --main-font: 18px;
   --accent-font: 116px;
