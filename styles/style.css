@@ -10,6 +10,11 @@
   font-weight: var(--font-weight-regular);
   line-height: var(--main-line-height);
   color: var(--color-text);
+}
+
+.header,
+.main,
+.footer {
   padding-inline: var(--page-padding);
 }
 
@@ -25,7 +30,7 @@
 .header__record {
   position: absolute;
   top: 10px;
-  right: 8px;
+  right: 18px;
   text-transform: uppercase;
   color: var(--color-accent);
   line-height: 25px;
@@ -49,7 +54,7 @@
   content: "";
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 10px;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--color-accent);
@@ -59,7 +64,7 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 10px;
   bottom: 10px;
   width: 25px;
   height: 25px;
@@ -230,20 +235,24 @@
     --page-padding: 20px;
   }
 
-  .header {
+  .header,
+  .footer {
     min-height: 1024px;
   }
 
   .header__record {
     top: 20px;
+    right: 28px;
   }
 
   .decorated-zone::before {
     top: 20px;
+    right: 20px;
   }
 
   .decorated-zone::after {
     bottom: 20px;
+    left: 20px;
   }
 
   .header__title-word {
@@ -310,7 +319,8 @@
 /* стили для расширения больше 1024 пикселей */
 
 @media (width >= 1024px) {
-  .header {
+  .header,
+  .footer {
     min-height: 768px;
   }
 
