@@ -5,9 +5,12 @@
 :root {
   --color-title: #db00ff;
   --color-accent: #ff0070;
+  --color-accent-text: #ff0070;
+  --color-section-title: #ff0070;
+  --color-section-subtitle: #000028;
   --color-background: #000028;
   --color-text: #f1b2ce;
-  --font-family: 'IBM Plex Mono', Arial, Helvetica, sans-serif;
+  --font-family: "IBM Plex Mono", Arial, Helvetica, sans-serif;
   --main-font: 18px;
   --accent-font: 116px;
   --font-weight-regular: 400;
@@ -20,4 +23,10 @@
   --text-block-gap: 20px;
   --nav-item-gap: 10px;
   --background-image-url: url(../images/cover-image-dark.png);
+}
+
+@media (width >= 768px) {
+  :root {
+    --page-padding: 20px;
+  }
 }
