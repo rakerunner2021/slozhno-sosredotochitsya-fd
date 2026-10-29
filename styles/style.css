@@ -89,7 +89,6 @@
   color: var(--color-accent-text);
   background-color: transparent;
   appearance: none;
-  border: none;
   text-transform: lowercase;
   padding: 4px 13px;
   line-height: 100%;
